@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bootstrap Lab Work</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar (Part 2) -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#hero">My Website</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navbarNav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section (Part 1) -->
+  <section id="hero" class="py-5 text-center bg-light mt-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h1 class="display-5 fw-bold">Welcome to My Bootstrap Site</h1>
+          <p class="lead">This website demonstrates my ability to build responsive Bootstrap pages.</p>
+          <a href="#contact" class="btn btn-primary">Sign Up</a>
+        </div>
+        <div class="col-md-6">
+          <img src="assests/images/hero.jpg" alt="Hero Image" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-5 text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <i class="bi bi-laptop fs-1 text-primary"></i>
+          <h3>Modern Design</h3>
+          <p>Clean and mobile-friendly Bootstrap 5 layouts.</p>
+          <button class="btn btn-outline-primary">Read More</button>
+        </div>
+        <div class="col-md-4">
+          <i class="bi bi-lightning fs-1 text-primary"></i>
+          <h3>Fast Loading</h3>
+          <p>Optimized for speed and accessibility.</p>
+          <button class="btn btn-outline-primary">Read More</button>
+        </div>
+        <div class="col-md-4">
+          <i class="bi bi-people fs-1 text-primary"></i>
+          <h3>User Friendly</h3>
+          <p>Easy navigation and clear layout for all users.</p>
+          <button class="btn btn-outline-primary">Read More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Alternating Image/Text Rows -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center mb-4">
+        <div class="col-md-6">
+          <h3>Responsive Layouts</h3>
+          <p>Bootstrap grids make content scale beautifully across devices.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="assests/images/layout.jpg" class="img-fluid rounded" alt="Layout Example">
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-md-6 order-md-2">
+          <h3>Custom Components</h3>
+          <p>You can easily extend Bootstrap with your own CSS.</p>
+        </div>
+        <div class="col-md-6 order-md-1">
+          <img src="assests/images/components.jpg" class="img-fluid rounded" alt="Components">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team" class="py-5 text-center">
+    <div class="container">
+      <h2 class="mb-4">Our Team</h2>
+      <div class="row">
+        <div class="col-md-3"><img src="assests/images/person1.jpg" class="rounded-circle mb-3" width="150"><h5>Jane Doe</h5><p>Designer</p></div>
+        <div class="col-md-3"><img src="assests/images/person2.jpg" class="rounded-circle mb-3" width="150"><h5>John Smith</h5><p>Developer</p></div>
+        <div class="col-md-3"><img src="assests/images/person3.jpg" class="rounded-circle mb-3" width="150"><h5>Mary Lee</h5><p>Manager</p></div>
+        <div class="col-md-3"><img src="assests/images/person4.jpg" class="rounded-circle mb-3" width="150"><h5>Alex Kim</h5><p>Marketer</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Carousel (Part 3) -->
+  <section class="py-5 bg-dark text-white">
+    <div class="container">
+      <h2 class="text-center mb-4">Gallery</h2>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active"><img src="assests/images/slide1.jpg" class="d-block w-100" alt="..."></div>
+          <div class="carousel-item"><img src="assests/images/slide2.jpg" class="d-block w-100" alt="..."></div>
+          <div class="carousel-item"><img src="assests/images/slide3.jpg" class="d-block w-100" alt="..."></div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Accordion (Part 4) -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">FAQs</h2>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#q1">What is Bootstrap?</button></h2>
+          <div id="q1" class="accordion-collapse collapse show" data-bs-parent="#accordionExample"><div class="accordion-body">Bootstrap is a front-end framework for responsive web design.</div></div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q2">Is it mobile-friendly?</button></h2>
+          <div id="q2" class="accordion-collapse collapse" data-bs-parent="#accordionExample"><div class="accordion-body">Yes, Bootstrap is mobile-first and responsive by default.</div></div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q3">Can I customize it?</button></h2>
+          <div id="q3" class="accordion-collapse collapse" data-bs-parent="#accordionExample"><div class="accordion-body">You can override Bootstrap styles with your own CSS.</div></div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q4">Where can I learn more?</button></h2>
+          <div id="q4" class="accordion-collapse collapse" data-bs-parent="#accordionExample"><div class="accordion-body">Visit the official documentation at getbootstrap.com.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section (Part 5) -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Contact Us</h2>
+          <form>
+            <div class="mb-3">
+              <label>Name</label>
+              <input type="text" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label>Email</label>
+              <input type="email" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label>Message</label>
+              <textarea class="form-control" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <h4>Our Info</h4>
+          <ul>
+            <li>Email: ankush@gmail.com</li>
+            <li>Phone: +1 647-712-0778</li>
+            <li>Address: 123 Main St, Toronto</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center py-3 bg-dark text-white">
+    © 2025 Bootstrap Lab Project
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
